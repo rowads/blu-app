@@ -1,0 +1,9 @@
+<!-- Placeholder for the main menu, adjust as needed -->
+<nav class="menu">
+  <ul>
+      <!-- Assuming you have a service fetching menu items and storing in a 'menuItems' array -->
+      <li *ngFor="let item of menuItems">
+          <a [routerLink]="[item.link]">{{ item.name }}</a>
+      </li>
+  </ul>
+</nav>

@@ -1,0 +1,5 @@
+<!-- Placeholder for the login functionality, adjust as needed -->
+<div class="login">
+  <a *ngIf="!isLoggedIn" [routerLink]="['/login']">Login</a>
+  <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
+</div>

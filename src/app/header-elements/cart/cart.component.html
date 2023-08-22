@@ -1,0 +1,15 @@
+<div class="wd-header-cart wd-tools-element">
+  <a [routerLink]="['/cart']" title="Shopping cart">
+      <span class="wd-tools-icon">
+          <!-- You can use an SVG or Font Awesome icon for the cart here -->
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-count">{{ cartItemCount }}</span>
+      </span>
+      <span class="wd-tools-text">
+          <span class="cart-count">{{ cartItemCount }}</span>
+          <span class="subtotal-divider">/</span>
+          {{ cartTotalPrice | currency }}
+      </span>
+  </a>
+  <!-- Dropdown for cart items can be added here -->
+</div>

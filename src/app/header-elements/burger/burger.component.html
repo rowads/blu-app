@@ -1,0 +1,12 @@
+<div class="wd-tools-element wd-header-mobile-nav" [ngClass]="extraClass">
+  <a href="#" rel="nofollow" aria-label="Open mobile menu">
+      <span *ngIf="iconDesignCondition" class="wd-tools-inner">
+          <span class="wd-tools-icon">
+              <ng-container *ngIf="iconType === 'custom'">
+                  <!-- Custom icon goes here -->
+              </ng-container>
+          </span>
+          <span class="wd-tools-text">Menu</span>
+      </span>
+  </a>
+</div>

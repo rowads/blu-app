@@ -1,0 +1,9 @@
+<div class="wd-header-cats" [ngClass]="extraClass" role="navigation" aria-label="Header categories navigation">
+  <span class="menu-opener" [ngClass]="class">
+      <span *ngIf="iconType === 'custom'" class="menu-opener-icon custom-icon">
+          <!-- Custom icon goes here -->
+      </span>
+      <span class="menu-open-label">{{ categoriesTitle }}</span>
+  </span>
+  <!-- Dropdown content goes here -->
+</div>

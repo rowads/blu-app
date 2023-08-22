@@ -1,0 +1,13 @@
+<div class="wd-header-my-account wd-tools-element" [ngClass]="classes">
+  <a *ngFor="let link of links" [href]="link.url" title="My account">
+      <span *ngIf="iconDesignCondition" class="wd-tools-inner">
+          <span class="wd-tools-icon">
+              <ng-container *ngIf="iconType === 'custom' && myAccountStyle === 'icon'">
+                  <!-- Custom icon goes here -->
+              </ng-container>
+          </span>
+          <span class="wd-tools-text">{{ link.label }}</span>
+      </span>
+  </a>
+  <!-- Dropdown content goes here -->
+</div>

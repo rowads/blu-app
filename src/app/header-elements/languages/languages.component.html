@@ -1,0 +1,22 @@
+<div class="wd-header-nav wd-header-secondary-nav">
+  <ul class="menu wd-nav wd-nav-secondary wd-style-default">
+      <li class="menu-item">
+          <a [routerLink]="currentLanguage.url" class="woodmart-nav-link">
+              <img [src]="currentLanguage.flagUrl" alt="{{ currentLanguage.name }}" class="wd-nav-img">
+              <span class="nav-link-text">{{ currentLanguage.name }}</span>
+          </a>
+          <div class="wd-dropdown-menu wd-dropdown wd-design-default">
+              <div class="container">
+                  <ul class="wd-sub-menu sub-menu">
+                      <li class="menu-item" *ngFor="let language of languages">
+                          <a [routerLink]="language.url" class="woodmart-nav-link">
+                              <img [src]="language.flagUrl" alt="{{ language.name }}" class="wd-nav-img">
+                              <span class="nav-link-text">{{ language.name }}</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </li>
+  </ul>
+</div>
